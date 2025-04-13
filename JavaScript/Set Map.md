@@ -1,13 +1,14 @@
-# Set과 Map  
+# Set과 Map<br>  
   
-## Set  
-  
-  
-![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/d4dd9f73-6379-44eb-aee1-5428adde2496-image.png)  
+## Set<br>  
+> Set 객체는 중복되지 않는 유일한 값들의 집합이다.  
   
   
+![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/d5ff0b76-e7e1-425d-8e3d-afa6a2f84d30-image.png)  
   
-### Set 객체의 생성  
+  
+  
+### Set 객체의 생성<br>  
 Set 객체는 Set 생성자 함수로 생성한다.   
 ```javascript  
 // 생성자 함수에 인수를 전달하지 않으면 빈 Set 객체가 생성된다.
@@ -28,7 +29,7 @@ const uniq2 = array => [...new Set(array)];
 console.log(uniq([2, 1, 2, 3, 4, 3, 4])); // [2, 1, 3, 4]  
 ```  
   
-### 요소 개수 확인   
+### 요소 개수 확인 <br>  
 Set 객체의 요소 개수를 확인할 때는 Set.prototype.size 프로퍼티를 사용한다.  
 ```javascript  
 const { size } = new Set([1, 2, 3, 3]);
@@ -36,7 +37,7 @@ console.log(size); // ?
 ```  
 * size 프로퍼티는 getter 함수만 존재하는 접근자 프로퍼티다 . 따라서 size 프로퍼티로 값을 변경할 수 없다.  
   
-### 요소 추가  
+### 요소 추가<br>  
 Set 객체에 요소를 추가할 때는 Set.prototype.add 메서드를 사용한다.  
 ```javascript  
 const set = new Set();
@@ -67,7 +68,7 @@ set
 ```  
 * Set 객체는 객체나 배열과 같이 자바스크립트의 모든 값을 요소로 저장할 수 있다.  
   
-### 요소 존재 여부 확인  
+### 요소 존재 여부 확인<br>  
 Set 객체에 특정 요소가 존재하는지 확인하려면 Set.prototype.has 메서드를 사용한다.  
   
 ```javascript  
@@ -77,7 +78,7 @@ console.log(set.has(2)); // true
 console.log(set.has(4)); // false  
 ```  
   
-### 요소 삭제  
+### 요소 삭제<br>  
 Set 객체의 특정 요소를 삭제하려면 Set.prototype.delete 메서드를 사용한다.  
   
 ```javascript  
@@ -94,7 +95,7 @@ console.log(set); // Set(2) {1, 3}
 * 존재하지 않는 요소를 삭제하려하면 에러 없이 무시된다.  
 * delete 메서드는 불리언 값을 반환한다. ⇒ 연속적으로 호출할 수 없다.  
   
-### 요소의 일괄 삭제  
+### 요소의 일괄 삭제<br>  
 Set 객체의 모든 요소를 일관 삭제하려면 Set.prototype.clear 메서드를 사용한다.  
   
 ```javascript  
@@ -105,7 +106,7 @@ console.log(set); // Set(0) {}
 ```  
 * clear 메서드는 언제나 undefined를 반환한다.  
   
-### 요소 순회  
+### 요소 순회<br>  
 Set 객체의 요소를 순회하려면 Set.prototype.forEach 메서드를 사용한다.  
   
 Set.prototype.forEach 메서드의 콜백 함수는 다음과 같이 3개의 인수를 전달받는다.  
@@ -127,13 +128,14 @@ set.forEach((v, v2, set) => console.log(v, v2, set));
 ```  
 * Set 객체는 이터러블이다. ⇒ 따라서 for … of 문으로 순회할 수 있고, 스프레드 문법, 배열 디스트럭처링의 대상이 될 수도 있다.  
   
-## Map  
+## Map<br>  
 ---  
+> Map 객체는 키와 값의 쌍으로 이루어진 컬렉션이다.  
   
   
-![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/44ff73ad-3e52-4486-8170-97ebd9126173-image.png)  
+![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/ded7555f-5bd6-4b70-8d50-8027def2e99c-image.png)  
   
-### Map 객체의 생성  
+### Map 객체의 생성<br>  
 Map 객체는 Map 생성자 함수로 생성한다.   
 ```javascript  
 // Map 생성자 함수에 인수를 전달하지 않으면 빈 Map 객체가 생성된다.
@@ -151,34 +153,34 @@ const map2 = new Map([['key1', 'value1'], ['key1', 'value2']]);
 console.log(map2); // Map(1) {"key1" => "value1"}  
 ```  
   
-### 요소의 개수 확인  
+### 요소의 개수 확인<br>  
 Map 객체의 요소 개수를 확인할 때는 Map.prototype.size 프로퍼티를 사용한다.  
   
-### 요소 추가  
+### 요소 추가<br>  
 Map 객체의 요소를 추가 할때는 Map.prototype.set 메서드를 사용한다.  
   
   
   
-### 요소 취득  
+### 요소 취득<br>  
 Map 객체에서 특정 요소를 취득하려면 Map.prototype.get 메서드를 사용한다.   
   
 * get 메서드의 인수로 키를 전달하면 해당 키를 갖는 값을 반환한다.  
 * 요소가 존재하지 않으면 undefined를 반환한다.  
   
-### 요소 존재 여부 확인  
+### 요소 존재 여부 확인<br>  
 Map 객체에 특정 요소가 존재하는지 확인하려면 Map.prototype.has 메서드를 사용한다.  
   
-### 요소 삭제  
+### 요소 삭제<br>  
 Map 객체의 요소를 삭제하려면 Map.prototype.delete 메서드를 사용한다.  
   
-### 요소 일괄 삭제  
+### 요소 일괄 삭제<br>  
 Map 객체의 요소를 일괄 삭제하려면 Map.prototype.clear 메서드를 사용한다.  
   
-### 요소 순회  
+### 요소 순회<br>  
 Map 객체의 요소를 순회하려면 Map.prototype.forEach 메서드를 사용한다.  
   
 📌 Map 객체는 이터러블이면서 동시에 이터레이터인 객체를 반환하는 메서드를 제공한다.  
-![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/6dc2f6a1-a03f-4424-8593-efa297cc50f7-image.png)  
+![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/f453ea62-0274-4c80-8557-1f6033c1595a-image.png)  
   
   
   
