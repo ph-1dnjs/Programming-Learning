@@ -4,7 +4,7 @@
 > Set 객체는 중복되지 않는 유일한 값들의 집합이다.  
   
   
-![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/d5ff0b76-e7e1-425d-8e3d-afa6a2f84d30-image.png)  
+![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/121fc07d-d680-40b3-9c32-219c41c7c046-image.png)  
   
   
   
@@ -133,7 +133,7 @@ set.forEach((v, v2, set) => console.log(v, v2, set));
 > Map 객체는 키와 값의 쌍으로 이루어진 컬렉션이다.  
   
   
-![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/ded7555f-5bd6-4b70-8d50-8027def2e99c-image.png)  
+![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/1f3a9e04-7156-4b13-bd5a-5cd295e9851f-image.png)  
   
 ### Map 객체의 생성<br>  
 Map 객체는 Map 생성자 함수로 생성한다.   
@@ -180,7 +180,7 @@ Map 객체의 요소를 일괄 삭제하려면 Map.prototype.clear 메서드를 
 Map 객체의 요소를 순회하려면 Map.prototype.forEach 메서드를 사용한다.  
   
 📌 Map 객체는 이터러블이면서 동시에 이터레이터인 객체를 반환하는 메서드를 제공한다.  
-![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/f453ea62-0274-4c80-8557-1f6033c1595a-image.png)  
+![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/dd2639f6-99f3-4d40-9c0d-fa1353f7397d-image.png)  
   
   
   
