@@ -154,7 +154,7 @@ xhr.open(method, url[, async]
 * GET 요청 메서드의 경우 데이터를 URL의 일부분인 쿼리 문자열로 서버에 전송한다.  
 * POST 요청 메서드의 경우 데이터(페이로드)를 요청 몸체에 담아 전송한다.  
   
-![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/6b2fde07-deba-4993-9355-d8cfba40a5fb-88f4dc19-7c31-41ad-af3b-3d1dd4dadcf5.png)  
+![IMAGE](https://raw.githubusercontent.com/nogi-bot/resources/main/ph-1dnjs/images/daf28dd5-6f8a-435e-9ba5-e79e02854f3a-88f4dc19-7c31-41ad-af3b-3d1dd4dadcf5.png)  
   
 `send` 메서드에는 요청 몸체에 담아 전송할 데이터(페이로드)를 인수로 전달할 수 있다. 페이로드가 객체인 경우 반드시 `JSON.stringify` 메서드를 사용하여 직렬화한 다음 전달해야 한다.  
   
